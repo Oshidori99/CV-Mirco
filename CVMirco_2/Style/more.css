@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* column left and right */
+div.row{
+    display: flex;
+    width: 100%;
+}
+
+div.column-left{
+    background-color: rgb(2, 2, 121);
+    height : 100%;
+    width: 40%;
+    font-size: 17pt;
+    color : rgb(224, 240, 240);
+    padding-bottom: 12px;
+}
+
+div.column-right {
+    background-color: rgb(210, 235, 235);
+    width: 60%;
+    font-size: 19px;
+    color: rgb(3, 3, 77);
+    padding: 20px;
+}
+
+div.column-left-content {
+    padding-left : 35px ;
+}
+
+div.column-right-content {
+    padding : 40px ;
+}
+
+
+ /* photo de profile */
+ div.PhotoContent1 {
+    padding-left: 145px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+ }
+
+div.column-left div.PhotoContent1 img {
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+ }  
+ 
+ /* Dates */
+
+.Dates1 {
+    color:#e17055;
+}
+
+
+/* Barres de progressions */
+
+* {box-sizing:border-box}
+
+/* Derrière les bars */
+.container {
+  width: 90%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+/* les pourcentages */
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+/*le remplissage */
+.francais {width: 100%; background-color: #04AA6D;} /* Green */
+.italien {width: 85%; background-color: #2196F3;} /* Blue */
+.anglais {width: 83%; background-color: #f44336;} /* Red */
+
+
+/* Bouton 2 */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.action-button {
+    padding: 50px 40px;
+    float: left;
+    border-radius: 70%;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 12px solid #2980B9;
+    border-right: 9px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    position:  absolute;
+    -webkit-transition: all 0.1s;
+    margin-left : 570px ;
+    margin-top : 15px ;
+
+}
+
+.action-button:hover {
+    color: #f3ab19;
+    transition: all 0.1s;
+
+
+}
+
+.action-button:active {
+    transform: translate(5px,5px);
+    -webkit-transform: translate(5px,5px);
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transition: 0.3s;
+    color: red;
+}
+
+
+@media (max-width: 1000px) {
+    div.row {
+        flex-direction: column;
+    }
+
+    div.column-left {
+        width : 100%;
+        font-size: 14px;
+    }
+
+    div.column-left-content {
+        padding-left : 15px ;
+    }
+
+    div.column-right {
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+        padding-bottom: 00px;
+    }
+
+    div.column-right-content {
+        padding : 5px ;
+    }
+
+    div.PhotoContent1 {
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+}
+
+    div.column-left div.PhotoContent1 img {
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+ }  
+
+    .container {
+        width: 90; /* Full width */
+        background-color: white; /* Grey background */
+    
+  }
+  
+  /* les pourcentages */
+    .skills {
+        text-align: right; /* Right-align text */
+        padding-top: 5px; /* Add top padding */
+        padding-bottom: 5px; /* Add bottom padding */
+        color: white; /* White text color */
+  }
+
+
+    .action-button {
+        padding: 25px 15px;
+        font-size: 20px;
+        margin-left : 170px ;
+        margin-top : 275px ;
+        border-right: 5px solid #2980B9; 
+        border-bottom : 8px solid #2980B9;
+}
+
+
+
+}
